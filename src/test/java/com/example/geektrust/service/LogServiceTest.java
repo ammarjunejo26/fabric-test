@@ -50,7 +50,7 @@ class LogServiceTest {
     @Test
     void testLogFundNotFoundPrintsCorrectMessage() {
         logService.logFundNotFound();
-        assertEquals(LogServiceImpl.FUND_NOT_FOUND_MESSAGE.trim() + "\n", outContent.toString().trim());
+        assertEquals(LogServiceImpl.FUND_NOT_FOUND_MESSAGE + "\n".trim(), outContent.toString().trim());
     }
 
     @Test
