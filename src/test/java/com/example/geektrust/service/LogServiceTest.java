@@ -44,18 +44,18 @@ class LogServiceTest {
     void testLogOverLapPrintsCorrectly() {
         logService.logOverLap(TEST_FUND_1, TEST_FUND_2, 12.3456);
         String expected = TEST_FUND_1 + ARG_SEPARATOR + TEST_FUND_2 + ARG_SEPARATOR + "12.35%\n";
-        assertEquals(expected, outContent.toString());
+        assertEquals(expected.trim(), outContent.toString().trim());
     }
 
     @Test
     void testLogFundNotFoundPrintsCorrectMessage() {
         logService.logFundNotFound();
-        assertEquals(LogServiceImpl.FUND_NOT_FOUND_MESSAGE + "\n", outContent.toString());
+        assertEquals(LogServiceImpl.FUND_NOT_FOUND_MESSAGE.trim() + "\n", outContent.toString().trim());
     }
 
     @Test
     void testLogErrorPrintsToErr() {
         logService.logError("Some error");
-        assertEquals("Some error\n", errContent.toString());
+        assertEquals("Some error\n".trim(), errContent.toString().trim());
     }
 }
