@@ -1,0 +1,19 @@
+{
+  "funds": [
+    {
+      "name": "ICICI_PRU_NIFTY_NEXT_50_INDEX",
+      "stocks": [
+        "INDRAPRASTHA GAS LIMITED",
+        "BIOCON LIMITED"
+      ]
+    },
+    {
+      "name": "ICICI_PRU_BLUECHIP",
+      "stocks": [
+        "INFOSYS LIMITED",
+        "BHARTI AIRTEL LIMITED",
+        "BIOCON LIMITED"
+      ]
+    }
+  ]
+}
