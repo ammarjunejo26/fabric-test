@@ -33,6 +33,7 @@ jacoco.xml
 
 ### IntelliJ IDEA ###
 .idea
+.idea/
 *.iws
 *.iml
 *.ipr
